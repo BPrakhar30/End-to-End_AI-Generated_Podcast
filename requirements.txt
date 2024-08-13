@@ -1,0 +1,4 @@
+openai
+pydub
+requests
+beautifulsoup4
