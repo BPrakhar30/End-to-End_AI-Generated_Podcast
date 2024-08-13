@@ -27,11 +27,16 @@ This repository contains the codebase for creating AI-generated news podcasts, a
 
 ## Code Structure
 scrapping.py: Scrappes the news from the base source website. 
+
 summary.py: Summarizes the scraped content to minimize the tokens.
+
 web_search.py: Integrates DuckDuckGo for web search and news aggregation from different sources.
+
 script.py: Manages the generation of podcast scripts using the scrapped and summarized content.
+
 tts.py: Converts the generated text into speech, incorporating emotions and expressions and making .mp3 file. 
 
 ## Future Enchancements
 Voice Cloning: Plans to incorporate voice cloning technology to create realistic guest voices on the podcast.
+
 Automated Uploads: Integration of automation scripts to streamline the uploading of episodes to Spotify and the website.
