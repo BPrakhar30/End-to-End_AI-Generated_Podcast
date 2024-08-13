@@ -1,0 +1,7 @@
+/__pycache__/
+/secret_token.txt
+/data/scrapped_news/
+data/podcast_script/
+data/podcast_episode/
+data/news_summaries/
+/spotify_upload.py
