@@ -1,6 +1,6 @@
 # End-to-End AI Generated Podcast
 
-This repository contains the codebase for creating AI-generated news podcasts, available at [DreamPodcasts](https://dreampodcasts.com/). The project explores the possibilities of content creation using Large Language Models (LLMs), extending their capabilities beyond typical output limits. This baseline code is versatile and can be adapted to produce various categories of podcasts, such as horror, daily news, children's content, travel explorations, and more.
+This repository contains the codebase for creating AI-generated news podcasts, available at [DreamPodcasts](https://dreampodcasts.com/). The project explores the possibilities of content creation using Large Language Models (LLMs), extending their capabilities beyond typical output limits. This baseline code can be adapted to produce various categories of podcasts, such as horror, daily news, children's content, travel explorations, and more.
 
 ## Features
 
