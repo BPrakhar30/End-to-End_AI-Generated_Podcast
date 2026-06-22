@@ -1,42 +1,54 @@
 # End-to-End AI Generated Podcast
 
-This repository contains the codebase for creating AI-generated news podcasts, available at [DreamPodcasts](https://dreampodcasts.com/). The project explores the possibilities of content creation using Large Language Models (LLMs), extending their capabilities beyond typical output limits. This baseline code can be adapted to produce various categories of podcasts, such as horror, daily news, children's content, travel explorations, and more.
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Live Demo](https://img.shields.io/badge/Demo-DreamPodcasts-FF6B6B?style=for-the-badge)](https://dreampodcasts.com/)
+[![LLM](https://img.shields.io/badge/LLM-GPT--4%20%7C%20Llama-412991)](https://platform.openai.com/)
+[![TTS](https://img.shields.io/badge/TTS-Voice%20Cloning-6366F1)](https://github.com/BPrakhar30/End-to-End_AI-Generated_Podcast)
+
+Automated pipeline that scrapes news, generates podcast scripts with LLMs, and synthesizes expressive speech — producing daily AI-generated podcast episodes.
+
+**Live product:** [dreampodcasts.com](https://dreampodcasts.com/)
 
 ## Features
 
-1. **Multi-Source News Integration**: Incorporates DuckDuckGo web search within the LLM pipeline to reduce bias and ensure diverse news sourcing.
-2. **Advanced Text-to-Speech (TTS)**: Utilizes an open-source TTS model capable of conveying expressions and emotions.
-3. **Unlimited Podcast Duration**: No restrictions on the length of generated podcast episodes.
-4. **Automated Episode Generation**: Episodes are generated automatically at a specified time each day.
+- **Multi-source news** — DuckDuckGo web search in the LLM pipeline for diverse sourcing
+- **Expressive TTS** — Open-source text-to-speech with emotion and intonation
+- **Unlimited duration** — No hard cap on episode length
+- **Daily automation** — Scheduled episode generation
 
-## Getting Started
+## Pipeline
 
-1. **Install Dependencies**: Install the required packages by running:
-   ```bash
-   pip install -r requirements.txt
+```
+News scrape → Summarize → Web search enrich → Script generation → TTS → MP3
+```
 
-2. Set Up API Tokens: Create a file named secret_token.txt and add your OpenAI token.
+| Module | Role |
+|--------|------|
+| `scrapping.py` | Scrape news from base sources |
+| `summary.py` | Compress content to reduce token usage |
+| `web_search.py` | DuckDuckGo aggregation for multi-source news |
+| `script.py` | Generate podcast script from scraped content |
+| `tts.py` | Convert script to expressive MP3 audio |
 
-3. Configure the Script:
+## Getting started
 
-    Update the date in main.py to today's date.
+```bash
+pip install -r requirements.txt
+```
 
-    Adjust file paths within the script to match your system's configuration.
+1. Create `secret_token.txt` with your OpenAI API key
+2. Update the date and file paths in `main.py`
+3. Run:
 
-4. Run the Script: Execute the main.py file to start generating your podcast episode.
+```bash
+python main.py
+```
 
-## Code Structure
-scrapping.py: Scrappes the news from the base source website. 
+## Roadmap
 
-summary.py: Summarizes the scraped content to minimize the tokens.
+- Voice cloning for realistic guest voices
+- Automated upload to Spotify and the website
 
-web_search.py: Integrates DuckDuckGo for web search and news aggregation from different sources.
+## Author
 
-script.py: Manages the generation of podcast scripts using the scrapped and summarized content.
-
-tts.py: Converts the generated text into speech, incorporating emotions and expressions and making .mp3 file. 
-
-## Future Enchancements
-Voice Cloning: Plans to incorporate voice cloning technology to create realistic guest voices on the podcast.
-
-Automated Uploads: Integration of automation scripts to streamline the uploading of episodes to Spotify and the website.
+Built during CMU research — part of a broader generative media pipeline (Llama 3 + GPT-4 + TTS).
