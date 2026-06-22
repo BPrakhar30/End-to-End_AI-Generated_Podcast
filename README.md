@@ -1,25 +1,25 @@
 # End-to-End AI Generated Podcast
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![Live Demo](https://img.shields.io/badge/Demo-DreamPodcasts-FF6B6B?style=for-the-badge)](https://dreampodcasts.com/)
+[![Spotify](https://img.shields.io/badge/Listen-Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/episode/1MpizVeG2DQrifcPd1M3dm?trackId=1MpizVeG2DQrifcPd1M3dm)
 [![LLM](https://img.shields.io/badge/LLM-GPT--4%20%7C%20Llama-412991)](https://platform.openai.com/)
 [![TTS](https://img.shields.io/badge/TTS-Voice%20Cloning-6366F1)](https://github.com/BPrakhar30/End-to-End_AI-Generated_Podcast)
 
-Automated pipeline that scrapes news, generates podcast scripts with LLMs, and synthesizes expressive speech — producing daily AI-generated podcast episodes.
+Automated pipeline that scrapes news, generates podcast scripts with LLMs, and synthesizes expressive speech - producing daily AI-generated podcast episodes.
 
-**Live product:** [dreampodcasts.com](https://dreampodcasts.com/)
+**Sample episode:** [Haunted Whispers in The Forbidden City on Spotify](https://open.spotify.com/episode/1MpizVeG2DQrifcPd1M3dm?trackId=1MpizVeG2DQrifcPd1M3dm)
 
 ## Features
 
-- **Multi-source news** — DuckDuckGo web search in the LLM pipeline for diverse sourcing
-- **Expressive TTS** — Open-source text-to-speech with emotion and intonation
-- **Unlimited duration** — No hard cap on episode length
-- **Daily automation** — Scheduled episode generation
+- **Multi-source news** - DuckDuckGo web search in the LLM pipeline for diverse sourcing
+- **Expressive TTS** - Open-source text-to-speech with emotion and intonation
+- **Unlimited duration** - No hard cap on episode length
+- **Daily automation** - Scheduled episode generation
 
 ## Pipeline
 
 ```
-News scrape → Summarize → Web search enrich → Script generation → TTS → MP3
+News scrape -> Summarize -> Web search enrich -> Script generation -> TTS -> MP3
 ```
 
 | Module | Role |
@@ -47,8 +47,8 @@ python main.py
 ## Roadmap
 
 - Voice cloning for realistic guest voices
-- Automated upload to Spotify and the website
+- Automated upload to Spotify
 
 ## Author
 
-Built during CMU research — part of a broader generative media pipeline (Llama 3 + GPT-4 + TTS).
+Built during CMU research - part of a broader generative media pipeline (Llama 3 + GPT-4 + TTS).
